@@ -1,20 +1,18 @@
 $(document).ready(()=>{
-
+    function closePopUp(){
+        $('.headerUl').removeClass('active');
+        $('#popUp').removeClass('blocker');
+    }
 // NAVIGATION --> HAMBURGER-BUTTON-EVENTS
     $('#hamburgerOpenBtn').click(()=>{
         $('.headerUl').addClass('active');
         $('#popUp').addClass('blocker');
     })
-    $('#hamburgerCloseBtn').click(()=>{
-        $('.headerUl').removeClass('active');
-        $('#popUp').removeClass('blocker');
-    })
-    $('#popUp').click(()=>{
-        $('.headerUl').removeClass('active');
-        $('#popUp').removeClass('blocker');
-    })
+    $('#hamburgerCloseBtn').click(closePopUp);
+    $('#popUp').click(closePopUp);
     
-
+// NavBar
+    $(".navListAnchor").click(closePopUp);
 // STICKY AND NAV-Bar scroll 
 
     $(window).scroll(()=>{
