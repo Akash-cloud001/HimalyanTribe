@@ -335,5 +335,148 @@ button { cursor: pointer; }
 }
 
 
+/* Footer */
+
+footer{
+  height: 400px;
+  background: var( --oxford-blue);
+  padding: 20px 20px 10px;
+  color: var(--cultured);
+}
+footer .sectionHeading{
+  color: var(--white);
+}
+footer a{
+  color: var(--cultured);
+}
+
+/* footer-Upper */
+.footer-upper{
+  position: relative;
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* contact-area */
+.footer-contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  transition: var(--transition);
+}
+.contact-ul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 85%;
+  height: 60%;
+}
+.contact-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:flex-start;
+  width: 100%;
+  gap: 8px;
+}
+
+/* footer-Shape */
+.footer-shape{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition);
+}
+.feetImg{
+  height: 250px;
+  opacity: 0.4;
+}
+.feetText{
+  font-size: large;
+}
 
 
+/* Footer Form */
+#footer-form{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 40%;
+  color: var(--cultured);
+  justify-content: space-evenly;
+  align-items: center;
+  transition: var(--transition);
+}
+#footer-form>input{
+  height: 32px;
+  width: 60%;
+  border: 1px solid var(--cultured);
+  padding-inline: 5px;
+  color: var(--gainsboro);
+  border-radius: 5px;
+}
+textarea{
+  height: 60px;
+  width: 60%;
+  border: 1px solid var(--cultured);
+  padding-inline: 5px;
+  color: var(--gainsboro);
+  border-radius: 5px;
+  resize: none;
+  background: var(--oxford-blue);
+  font-size: 16px;
+  padding: 5px;
+}
+#footer-Btn{
+  font-size: small;
+background: var(--bright-navy-blue);
+color: var(--white);
+padding: 6px 14px;
+border-radius: 6px;
+/* margin: px; */
+opacity: 0.9;
+transition: var(--transition);
+}
+#footer-Btn:hover{
+  opacity: 1;
+}
+
+/* Footer-Handles */
+.footer-handles{
+  height: 8%;
+  width: 100%;
+}
+.handler-ul{
+  display: flex;
+  width: 10%;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline:auto;
+  font-size: 1.3rem;
+  transition: var(--transition);
+}
+
+
+/* Footer-Lower */
+.footer-lower{
+  height: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.footer-bottom-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
