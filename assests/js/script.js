@@ -1,4 +1,5 @@
 $(document).ready(()=>{
+    // DOM is Ready
     function closePopUp(){
         $('.headerUl').removeClass('active');
         $('#popUp').removeClass('blocker');

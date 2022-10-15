@@ -1,4 +1,6 @@
-var swiper = new Swiper(".slide-content", {
+document.addEventListener("DOMContentLoaded", function(){ 
+  //  DOM is ready
+  var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
     spaceBetween: 25,
     // slidesPerGroup: 3,
@@ -28,3 +30,5 @@ var swiper = new Swiper(".slide-content", {
         },
     },
   });
+});
+
