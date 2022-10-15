@@ -96,6 +96,7 @@ section,footer{
   color: var(--yale-blue);
   text-align: center;
   transition: var(--transition);
+  z-index: 1;
 }
 
 .sectionDisc{
