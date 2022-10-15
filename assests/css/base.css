@@ -157,8 +157,8 @@ button { cursor: pointer; }
 
 .go-top {
     position: fixed;
-    bottom: 15px;
-    right: 15px;
+    bottom: 40px;
+    right: 20px;
     width: 35px;
     height: 35px;
     background: var(--bright-navy-blue);
