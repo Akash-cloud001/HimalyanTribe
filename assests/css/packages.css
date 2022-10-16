@@ -87,6 +87,36 @@
     word-wrap: break-word;
 }
 
+/* HR Line */
+hr{
+    width: 80%;
+    text-align: center;
+    opacity: 0.5;
+}
+
+
+/* Slider */
+.place{
+    max-width:1120px ;
+    width: 100%; 
+}
+.slide-container{
+    padding: 10px 40px 40px;
+}
+
+.place-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-family: var(--ff-montserrat);
+    font-weight: var(--fw-800);
+    color: var(--oxford-blue);
+    text-align: center;
+    transition: var(--transition);
+    z-index: 1;
+    padding-top: 10px;
+}
 
 /* User Cards */
 .card-content{
@@ -342,6 +372,10 @@
 }
 
 @media screen and (max-width:500px){
+    /* Slider */
+    .slide-container {
+        padding: 10px 10px 40px;
+    }
     footer{
         height: 500px;
     }

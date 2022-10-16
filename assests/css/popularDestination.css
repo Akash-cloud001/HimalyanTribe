@@ -447,6 +447,10 @@
 }
 
 @media screen and (max-width:500px){
+  /* Slider */
+  .slide-container {
+    padding: 10px 10px 40px;
+}
   footer{
       height: 500px;
   }
