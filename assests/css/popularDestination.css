@@ -411,18 +411,18 @@
     .footer-upper{
       flex-direction: column-reverse;
       justify-content: space-between;
-  }
-  .footer-contact{
+    }
+    .footer-contact{
       width: 100%;
       height: 40%;
-  }
-  #footer-form > h3, .footer-contact > h3{
+    }
+    #footer-form > h3, .footer-contact > h3{
       text-align: center;
-  }
-  #footer-form{
+    }
+    #footer-form{
       width: 55%;
-  }
-  .contact-ul{
+    }
+    .contact-ul{
       display: grid;
       grid-template-columns: repeat(2,1fr);
       grid-template-rows: repeat(2,1fr);
@@ -430,19 +430,19 @@
       align-items: center;
       width: 100%;
       height: 60%;
-  }
-  .contact-item:nth-child(3){
+    }
+    .contact-item:nth-child(3){
       grid-column-start: 1;
       grid-column-end: 3;
       grid-row-start: 2;
       grid-row-end: 3;
-  }
-  .handler-ul{
+    }
+    .handler-ul{
       width: 20%;
-  }
-  .footer-shape {
+    }
+    .footer-shape {
       transform: translate(-50%, -25%);
-  }
+    }
     
 }
 
