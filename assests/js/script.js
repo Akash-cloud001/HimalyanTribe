@@ -33,4 +33,41 @@ $(document).ready(()=>{
         }
     })
 
+// Footer quick links
+    $('.footer-pop-div').click(()=>{
+        $('.footer-pop-div').removeClass('footer-active');
+    });
+
+    $('popup-close-btn').click(()=>{
+        $('.footer-pop-div').removeClass('footer-active');
+    });
+    //privacy policy
+    $('#privacy-policy').click(()=>{
+        console.log('pp')
+        $('#pp-popup').addClass('footer-active');
+    });
+
+    // cancellation policy
+    $('#cancellation-policy').click(()=>{
+        console.log('cp')
+        $('#cp-popup').addClass('footer-active');
+    });
+
+    // terms and cond
+    $('#terms-and-cond').click(()=>{
+        console.log('t&c')
+        $('#tc-popup').addClass('footer-active');
+    });
+
+    //disclaimer
+    $('#disclaimer-policy').click(()=>{
+        console.log('disc')
+        $('#d-popup').addClass('footer-active');
+    });
+
+    // about us
+    $('#about-us').click(()=>{
+        $('#a-popup').addClass('footer-active');
+        console.log('about')
+    });
 })
