@@ -422,7 +422,7 @@ hr{
 /* Footer */
 
 footer{
-  height: 400px;
+  height: 405px;
   background: var( --oxford-blue);
   padding: 20px 20px 10px;
   color: var(--cultured);
@@ -443,6 +443,7 @@ footer a{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  font-size: small;
 }
 
 /* contact-area */
@@ -451,17 +452,19 @@ footer a{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 40%;
+  width: 60%;
   height: 100%;
   transition: var(--transition);
 }
+.contact-text{
+  width: 100%;
+}
 .contact-ul{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-around;
-  width: 85%;
+  width: 100%;
   height: 60%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4,1fr);
 }
 .contact-item{
   display: flex;
@@ -472,83 +475,49 @@ footer a{
   gap: 8px;
 }
 
+.handler-ul{
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+  font-size: medium;
+  justify-content: flex-start;
+  column-gap: 1.5rem;
+}
+.handler-list{
+
+}
+
 /* footer-Shape */
 .footer-shape{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   transition: var(--transition);
 }
 .feetImg{
   height: 250px;
   opacity: 0.4;
 }
-.feetText{
-  font-size: large;
-}
 
 
-/* Footer Form */
-#footer-form{
+/* quick-links */
+.quick-links{
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
   height: 100%;
-  width: 40%;
-  color: var(--cultured);
-  justify-content: space-evenly;
-  align-items: center;
   transition: var(--transition);
 }
-#footer-form>input{
-  height: 32px;
-  width: 60%;
-  border: 1px solid var(--cultured);
-  padding-inline: 5px;
-  color: var(--gainsboro);
-  border-radius: 5px;
-}
-textarea{
-  height: 60px;
-  width: 60%;
-  border: 1px solid var(--cultured);
-  padding-inline: 5px;
-  color: var(--gainsboro);
-  border-radius: 5px;
-  resize: none;
-  background: var(--oxford-blue);
-  font-size: 16px;
-  padding: 5px;
-}
-#footer-Btn{
-  font-size: small;
-background: var(--bright-navy-blue);
-color: var(--white);
-padding: 6px 14px;
-border-radius: 6px;
-/* margin: px; */
-opacity: 0.9;
-transition: var(--transition);
-}
-#footer-Btn:hover{
-  opacity: 1;
-}
-
-/* Footer-Handles */
-.footer-handles{
-  height: 8%;
+.quick-ul{
   width: 100%;
+  height: 60%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5,1fr);
 }
-.handler-ul{
-  display: flex;
-  width: 10%;
-  justify-content: space-between;
-  align-items: center;
-  margin-inline:auto;
-  font-size: 1.3rem;
-  transition: var(--transition);
-}
-
 
 /* Footer-Lower */
 .footer-lower{
@@ -565,3 +534,84 @@ transition: var(--transition);
   align-items: center;
   gap: 15px;
 }
+/* Media queries for footer */
+
+
+@media screen and (max-width:970px){
+  /* Footer */
+
+  .footer-contact,.footer-lower{
+    font-size: small;
+  }
+  .footer-shape{
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  /* Footer */
+  footer{
+    height: 460px;
+    padding: 10px 10px 5px;
+  }
+  .footer-upper{
+    height: 85%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .footer-lower{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-contact{
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer-shape {
+    top: -17%;
+    left: 50%;
+    transform: translate(-50%, -34%);
+  }
+  .quick-links{
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width:600px){
+  /* footer */
+  
+  .footer-contact{
+      width: 100%;
+      height: 100%;
+  }
+ .footer-contact > h3{
+      text-align: center;
+  }
+  .footer-shape {
+      transform: translate(-50%, -30%);
+  }
+}
+@media screen and (max-width:500px){
+  /* footer */
+  footer{
+    height: 520px;
+  }
+}
+
+
+@media screen and (max-width:300px){
+  /* Footer */
+    footer{
+        height: 630px;
+    }
+  } 
