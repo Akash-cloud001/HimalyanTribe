@@ -178,7 +178,7 @@
 
 
 /* Media Queries */
-@media screen and (max-width:1023px) {
+@media screen and (max-width:1025px) {
       /* Header */
     .headerNav{
         grid-template-columns: 1fr 0.5fr;
@@ -347,7 +347,7 @@
 }
 
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:430px) {
     .logo{
         width: 100%;
         column-gap: 0px;
@@ -377,5 +377,8 @@
       /* header Content */
       .headerMotto{
           font-size: 1.5rem;
+      }
+      #logoImg{
+        padding-left: 0px;
       }
   }
