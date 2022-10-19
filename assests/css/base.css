@@ -84,6 +84,10 @@ body{
   max-width: 100vw;
   overflow-x: hidden;
   background-color: var(--body-background);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Comman tags */
@@ -113,9 +117,11 @@ section,footer{
   z-index: 1;
 }
 
-.sectionDisc{
+.sectionAbout{
+  padding-top: 20px;
   font-size: medium;
   text-align: center;
+  color: var(--yale-blue);
 }
 
 a{
@@ -135,7 +141,11 @@ button {
 
 button { cursor: pointer; }
 
-
+hr{
+  width: 80%;
+  text-align: center;
+  opacity: 0.5;
+}
 /* Reused Css */
 .h1,
 .h2,
@@ -168,7 +178,6 @@ button { cursor: pointer; }
 /* box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1); */
 
 /* GO TO TOP */
-/* GO TOP */
 
 .go-top {
     position: fixed;
@@ -252,28 +261,19 @@ button { cursor: pointer; }
 .slide-content{
   margin: 0 40px;
   overflow: hidden;
-  /* border-radius: 25px; */
 }
 .card{
-  /* width: 320px; */
-  /* border-radius: 25px; */
   background: var(--white);
 }
-.image-content,
-.card-content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+
 .image-content{
   position: relative;
-  /* row-gap: 5px;
-  padding: 10px 10px 10px; */
 }
 
 .card-content{
   padding: 0px 28px 5px;
+  background-color: var(--body-background);
+  height: 150px;
 }
 
 .card-image{
@@ -281,37 +281,107 @@ button { cursor: pointer; }
   height: 200px;
   width: 100%;
   background: var(--white);
-  /* border-top-left-radius: 15px;
-  border-top-right-radius: 15px; */
   overflow: hidden;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .card-image .card-img{
   height: 100%;
   width: 100%;
   object-fit: cover;
-  /* border-top-left-radius: 15px;
-  border-top-right-radius: 15px; */
   transition: var(--transition);
 }
 .card-img:hover{
   transform: scale(1.1);
 }
-.name{
-  font-size: var(--fs-18);
-  font-weight: var(--fw-700);
-  font-family: var(--ff-montserrat);
-  color: var(--yale-blue);
-  text-align: center;
+
+
+.popular-image-content{
+  height: 400px;
+  overflow: hidden;
+}
+.round-corner{
+  border-radius: 10px;
+}
+.popular-image-content>a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: var(--white);
   transition: var(--transition);
 }
-.description{
-  font-size: small;
-  text-align: center;
+.popular-image-content>a:hover{
+  scale: 1.1;
 }
+.popular-card-image{
+  height: 400px;
+  width: 100%;
+
+}
+
+.popular-card-image .card-img{
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+.placeName{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: var(--ff-cursive);
+  font-size: xx-large;
+  font-weight: var(--fw-600);
+  letter-spacing: 0.2rem;
+}
+/* glassmorp card */
+.glassmorp-card{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  top: 65%;
+  height: 50%;
+  width: 100%;
+  transition: var(--transition);
+}
+.glassmorp-card:hover{
+  top: 60%;
+}
+.glassmorp-heading{
+  color: var(--white);
+  font-family: var(--ff-montserrat);
+  padding: 10px 10px 0px 10px;
+  word-wrap:break-word;
+}
+.glassmorp-plan{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--white);
+  font-family: var(--ff-montserrat);
+  padding: 10px 10px;
+
+}
+/* Google Rupee icon */
+.material-symbols-outlined {
+  font-size: 20px;
+}
+
 
 /* Buttons */
 .moreinfo{
-  font-size: small;
+  font-size: medium;
   background: var(--bright-navy-blue);
   color: var(--white);
   padding: 6px 14px;

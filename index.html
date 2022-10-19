@@ -13,6 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+
+    <!-- Google Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="./assests/css/swiper-bundle.min.css">
     <!-- RemixIcon -->
@@ -38,7 +42,7 @@
             <figure class="logo">
                 <img src="./assests/images/himalayanTribeLogo1.png" alt="" id="logoImg">
                     
-                <a href="tel:+917559700666" class="headerCall"><i class="ri-phone-line"></i> +91 7559700666
+                <a href="tel:+917559700666" class="headerCall"><i class="ri-phone-line"></i> +91-7559700666
                 </a>
             </figure>
             
@@ -62,9 +66,9 @@
                     </a>
                 </li>
                 <li class="headerList">
-                    <a href="#packages" class="navListAnchor">
+                    <a href="#categories" class="navListAnchor">
                         <i class="ri-ancient-gate-line"></i>
-                        packages
+                        categories
                     </a>
                 </li>
                 <li class="headerList">
@@ -91,12 +95,19 @@
             </div>
         </nav>
         <div class="headerContent">
-            <div id="indexHeaderMotto" class="headerMotto upperCase">
-                Journey To <br>Explore World
+            <div id="indexHeaderMotto" class="headerMotto capitalize">
+                <span class="headerMottoSpan1">
+                    leave the  
+                </span>
+                <br>
+                <span class="headerMottoSpan2">city</span>
+                <br>
+                <span class="headerMottoSpan1">
+                   be in the
+                </span>
+                <br>
+                <span class="headerMottoSpan2"> mountains</span>
             </div>
-            <p id="indexHeaderAbout" class="headerAbout">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown an.
-            </p>
         </div>
     </header>
 
@@ -108,14 +119,8 @@
         <h1 id="popularDestinationHeader" class="sectionHeading capitalize">
             <i class="ri-map-pin-2-line"></i>&nbsp;popular destination
         </h1>
-
-
-        <!-- about -->
-        <div id="popularDestinationAbout" class="sectionDisc">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        </div>
-
-
+        <!-- About -->
+        <h4 class="upperCase sectionAbout">start your himachal journey with himalayan tribe top destinations for your perfect vacation</h4>
         <!-- slider -->
         <div id="popularDestinationSlider" class="slide-container swiper">
             <div class="slide-content">
@@ -123,114 +128,62 @@
                     <!-- Cards -->
                     <div class="card swiper-slide">
                         <!-- div to handle the image -->
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <!-- Image of the place -->
-                                <img src="./assests/images/popularImages/kasol.jpg" alt="" class="card-img">
-                            </div>
+                        <div class="image-content popular-image-content">
+                            <a href="">
+                                <div class="card-image popular-card-image">
+                                    <!-- Image of the place -->
+                                    <img src="./assests/images/popularImages/kasol.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="placeName capitalize">
+                                    dharamashala
+                                </div>
+                            </a>
+                            
+                            
+                                
                         </div>
-                        <!-- div to handle the content -->
-                        <div class="card-content">
-                            <!-- name of the place -->
-                            <h3 class="name">Village</h3>
-                            <!-- description about the place keepp it in one line -->
-                            <p class="description">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            </p>
-                            <!-- link to redirect it on specific location -->
-                            <a class="moreinfo capitalize" href="" target="_blank">know More</a>
-                        </div>
+                        
                     </div>
                     <div class="card swiper-slide">
                         <!-- div to handle the image -->
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <!-- Image of the place -->
-                                <img src="./assests/images/popularImages/kasol.jpg" alt="" class="card-img">
-                            </div>
+                        <div class="image-content popular-image-content">
+                            <a href="">
+                                <div class="card-image popular-card-image">
+                                    <!-- Image of the place -->
+                                    <img src="./assests/images/popularImages/dharamashala.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="placeName capitalize">
+                                    Manali
+                                </div>
+                            </a>
+                            
+                            
+                                
                         </div>
-                        <!-- div to handle the content -->
-                        <div class="card-content">
-                            <!-- name of the place -->
-                            <h3 class="name">Village</h3>
-                            <!-- description about the place keepp it in one line -->
-                            <p class="description">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            </p>
-                            <!-- link to redirect it on specific location -->
-                            <a class="moreinfo capitalize" href="" target="_blank">know More</a>
-                        </div>
+                        
                     </div>
                     <div class="card swiper-slide">
                         <!-- div to handle the image -->
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <!-- Image of the place -->
-                                <img src="./assests/images/popularImages/kasol.jpg" alt="" class="card-img">
-                            </div>
+                        <div class="image-content popular-image-content">
+                            <a href="">
+                                <div class="card-image popular-card-image">
+                                    <!-- Image of the place -->
+                                    <img src="./assests/images/popularImages/spitiValley.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="placeName capitalize">
+                                    Spiti
+                                </div>
+                            </a>
+                            
+                            
+                                
                         </div>
-                        <!-- div to handle the content -->
-                        <div class="card-content">
-                            <!-- name of the place -->
-                            <h3 class="name">Village</h3>
-                            <!-- description about the place keepp it in one line -->
-                            <p class="description">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            </p>
-                            <!-- link to redirect it on specific location -->
-                            <a class="moreinfo capitalize" href="" target="_blank">know More</a>
-                        </div>
+                        
                     </div>
-                    <div class="card swiper-slide">
-                        <!-- div to handle the image -->
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <!-- Image of the place -->
-                                <img src="./assests/images/popularImages/kasol.jpg" alt="" class="card-img">
-                            </div>
-                        </div>
-                        <!-- div to handle the content -->
-                        <div class="card-content">
-                            <!-- name of the place -->
-                            <h3 class="name">Village</h3>
-                            <!-- description about the place keepp it in one line -->
-                            <p class="description">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            </p>
-                            <!-- link to redirect it on specific location -->
-                            <a class="moreinfo capitalize" href="" target="_blank">know More</a>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <!-- div to handle the image -->
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <!-- Image of the place -->
-                                <img src="./assests/images/popularImages/kasol.jpg" alt="" class="card-img">
-                            </div>
-                        </div>
-                        <!-- div to handle the content -->
-                        <div class="card-content">
-                            <!-- name of the place -->
-                            <h3 class="name">Village</h3>
-                            <!-- description about the place keepp it in one line -->
-                            <p class="description">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            </p>
-                            <!-- link to redirect it on specific location -->
-                            <a class="moreinfo capitalize" href="" target="_blank">know More</a>
-                        </div>
-                    </div>
+                    
                     
                 </div>
                 <div class="swiper-button-next swiper-navBtn"></div>
@@ -239,148 +192,120 @@
             </div>
         </div>
 
-
-        <!-- button for the destination page -->
-        <a id="popularDestinationBtn" class="moreinfo capitalize" href="#" target="_blank">More destination's</a>
-
-
     </section>
 
+    <hr>
+
     <!-- SECTION PACKAGES -->
-    <section id="packages">
+    <section id="categories">
 
 
         <!-- header -->
-        <h1 id="packagesHeader" class="sectionHeading capitalize">
-            <i class="ri-ancient-gate-line"></i>&nbsp;Our packages
+        <h1 id="categoriesHeader" class="sectionHeading capitalize">
+            <i class="ri-ancient-gate-line"></i>&nbsp;Tour categories
         </h1>
-
-
-        <!-- About -->
-        <div id="packagesAbout" class="sectionDisc">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        </div>
-
-
+        <h4 class="upperCase sectionAbout">
+            well cultured professionally designed tours by our local experts
+        </h4>
         <!-- Slider -->
-        <div id="packagesSlider" class="slide-container swiper">
+        <div id="categoriesSlider" class="slide-container swiper">
             <div class="slide-content">
-                <div id="packagesSliderCardContainer" class="card-wrapper swiper-wrapper">
+                <div id="categoriesSliderCardContainer" class="card-wrapper swiper-wrapper">
                     <!-- Cards -->
                     <div class="card swiper-slide">
                         <!-- div to handle the image -->
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="./assests/images/popularImages/shimlaphoto.jpg" alt="" class="card-img">
-                            </div>
+                        <div class="image-content popular-image-content">
+                            <a href="">
+                                <div class="card-image popular-card-image">
+                                    <!-- Image of the place -->
+                                    <img src="./assests/images/popularImages/kasol.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="placeName upperCase">
+                                    honeymoon<br> pacakges
+                                </div>
+                            </a>
+                            
+                            
+                                
                         </div>
-                        <!-- div to handle the content -->
-                        <div class="card-content">
-                            <!-- mention the name of the pakage in the below h3 tag -->
-                            <h3 class="name">Package Name</h3>
-                            <!-- mention the mention in below h4 tag -->
-                            <h4 class="price">500$</h4>
-                            <!-- details about the pack keep it in one line -->
-                            <p class="description">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            </p>
-                            <!-- Give the link of the pdf in href attribute in below anchor tag -->
-                            <a class="moreinfo capitalize" href="" target="_blank" download>download pdf</a>
-                        </div>
+                        
                     </div>
                     <div class="card swiper-slide">
                         <!-- div to handle the image -->
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="./assests/images/popularImages/shimlaphoto.jpg" alt="" class="card-img">
-                            </div>
+                        <div class="image-content popular-image-content">
+                            <a href="">
+                                <div class="card-image popular-card-image">
+                                    <!-- Image of the place -->
+                                    <img src="./assests/images/popularImages/dharamashala.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="placeName upperCase">
+                                    family<br> packages
+                                </div>
+                            </a>
+                            
+                            
+                                
                         </div>
-                        <!-- div to handle the content -->
-                        <div class="card-content">
-                            <!-- mention the name of the pakage in the below h3 tag -->
-                            <h3 class="name">Package Name</h3>
-                            <!-- mention the mention in below h4 tag -->
-                            <h4 class="price">500$</h4>
-                            <!-- details about the pack keep it in one line -->
-                            <p class="description">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            </p>
-                            <!-- Give the link of the pdf in href attribute in below anchor tag -->
-                            <a class="moreinfo capitalize" href="" target="_blank" download>download pdf</a>
-                        </div>
+                        
                     </div>
                     <div class="card swiper-slide">
                         <!-- div to handle the image -->
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="./assests/images/popularImages/shimlaphoto.jpg" alt="" class="card-img">
-                            </div>
+                        <div class="image-content popular-image-content">
+                            <a href="">
+                                <div class="card-image popular-card-image">
+                                    <!-- Image of the place -->
+                                    <img src="./assests/images/popularImages/spitiValley.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="placeName upperCase">
+                                    group<br> pacakges
+                                </div>
+                            </a>
+                            
+                            
+                                
                         </div>
-                        <!-- div to handle the content -->
-                        <div class="card-content">
-                            <!-- mention the name of the pakage in the below h3 tag -->
-                            <h3 class="name">Package Name</h3>
-                            <!-- mention the mention in below h4 tag -->
-                            <h4 class="price">500$</h4>
-                            <!-- details about the pack keep it in one line -->
-                            <p class="description">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            </p>
-                            <!-- Give the link of the pdf in href attribute in below anchor tag -->
-                            <a class="moreinfo capitalize" href="" target="_blank" download>download pdf</a>
-                        </div>
+                        
                     </div>
                     <div class="card swiper-slide">
                         <!-- div to handle the image -->
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="./assests/images/popularImages/shimlaphoto.jpg" alt="" class="card-img">
-                            </div>
+                        <div class="image-content popular-image-content">
+                            <a href="">
+                                <div class="card-image popular-card-image">
+                                    <!-- Image of the place -->
+                                    <img src="./assests/images/popularImages/dharamashala.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="placeName upperCase">
+                                    Exotic<br> packages
+                                </div>
+                            </a>
+                            
+                            
+                                
                         </div>
-                        <!-- div to handle the content -->
-                        <div class="card-content">
-                            <!-- mention the name of the pakage in the below h3 tag -->
-                            <h3 class="name">Package Name</h3>
-                            <!-- mention the mention in below h4 tag -->
-                            <h4 class="price">500$</h4>
-                            <!-- details about the pack keep it in one line -->
-                            <p class="description">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            </p>
-                            <!-- Give the link of the pdf in href attribute in below anchor tag -->
-                            <a class="moreinfo capitalize" href="" target="_blank" download>download pdf</a>
-                        </div>
+                        
                     </div>
                     <div class="card swiper-slide">
                         <!-- div to handle the image -->
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="./assests/images/popularImages/shimlaphoto.jpg" alt="" class="card-img">
-                            </div>
+                        <div class="image-content popular-image-content">
+                            <a href="">
+                                <div class="card-image popular-card-image">
+                                    <!-- Image of the place -->
+                                    <img src="./assests/images/popularImages/spitiValley.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="placeName upperCase">
+                                    MNC<br>pacakges
+                                </div>
+                            </a>
+                            
+                            
+                                
                         </div>
-                        <!-- div to handle the content -->
-                        <div class="card-content">
-                            <!-- mention the name of the pakage in the below h3 tag -->
-                            <h3 class="name">Package Name</h3>
-                            <!-- mention the mention in below h4 tag -->
-                            <h4 class="price">500$</h4>
-                            <!-- details about the pack keep it in one line -->
-                            <p class="description">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            </p>
-                            <!-- Give the link of the pdf in href attribute in below anchor tag -->
-                            <a class="moreinfo capitalize" href="" target="_blank" download>download pdf</a>
-                        </div>
+                        
                     </div>
                     
                 </div>
@@ -397,6 +322,187 @@
 
     </section>
 
+    <hr>
+
+    <!-- SECTION TOP PACKAGES -->
+    <section id="top-packages">
+
+
+        <!-- header -->
+        <h1 id="top-packagesHeader" class="sectionHeading capitalize">
+            <i class="ri-ancient-gate-line"></i>&nbsp;Our top packages
+        </h1>
+        <!-- About -->
+        <h4 class="upperCase sectionAbout">professionally hand written itineraries by our local tour experts</h4>
+        <!-- Slider -->
+        <div id="top-packagesSlider" class="slide-container swiper">
+            <div class="slide-content">
+                <div id="top-packagesSliderCardContainer" class="card-wrapper swiper-wrapper">
+                    <!-- Cards -->
+                    <div class="card swiper-slide">
+                        <!-- div to handle the image -->
+                        <a href="">
+                            <div class="image-content popular-image-content round-corner">
+                                <div class="card-image popular-card-image">
+                                    <img src="./assests/images/popularImages/manali.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="glassmorp-card">
+                                    <h3 class="upperCase glassmorp-heading">Romantic Himachal
+                                    </h3>
+                                    <p class="glassmorp-plan capitalize">
+                                        <i class="ri-time-line"></i>&nbsp; 4 nights-5 days
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card swiper-slide">
+                        <!-- div to handle the image -->
+                        <a href="">
+                            <div class="image-content popular-image-content round-corner">
+                                <div class="card-image popular-card-image">
+                                    <img src="./assests/images/popularImages/shimlaphoto.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="glassmorp-card">
+                                    <h3 class="upperCase glassmorp-heading">Shimla manali honeymoon pacakge
+                                    </h3>
+                                    <p class="glassmorp-plan capitalize">
+                                        <i class="ri-time-line"></i>&nbsp; 4 nights-5 days
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card swiper-slide">
+                        <!-- div to handle the image -->
+                        <a href="">
+                            <div class="image-content popular-image-content round-corner">
+                                <div class="card-image popular-card-image">
+                                    <img src="./assests/images/popularImages/spitiValley.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="glassmorp-card">
+                                    <h3 class="upperCase glassmorp-heading">splendid spiti
+                                    </h3>
+                                    <p class="glassmorp-plan capitalize">
+                                        <i class="ri-time-line"></i>&nbsp; 4 nights-5 days
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div> 
+
+
+        <!-- button for the destination page -->
+        <a id="packagesBtn" class="moreinfo capitalize" href="#" target="_blank">view all packages</a>
+
+
+    </section>
+
+    <hr>
+
+
+    <!-- SECTION CAB -->
+    <section id="cab-section">
+
+
+        <!-- header -->
+        <h1 id="cab-Header" class="sectionHeading capitalize">
+            <i class="ri-taxi-line"></i>&nbsp;Rent A CAB
+        </h1>
+        <!-- About -->
+        <h4 class="upperCase sectionAbout">hire our expert and friendly drivers for your hassel free journey</h4>
+        <!-- Slider -->
+        <div id="cab-Slider" class="slide-container swiper">
+            <div class="slide-content">
+                <div id="cab-SliderCardContainer" class="card-wrapper swiper-wrapper">
+                    <!-- Cards -->
+                    <div class="card swiper-slide">
+                        <!-- div to handle the image -->
+                        <a href="">
+                            <div class="image-content popular-image-content round-corner">
+                                <div class="card-image popular-card-image cab-image">
+                                    <img src="./assests/images/Cab/tempo.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="glassmorp-card cab-name">
+                                    <h3 class="upperCase glassmorp-heading">Tempo Traveller
+                                    </h3>
+                                    <p class="glassmorp-plan capitalize cab-price">
+                                        <span class="material-symbols-outlined">
+                                            currency_rupee
+                                        </span>
+                                        &nbsp;5000 per Day
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card swiper-slide">
+                        <!-- div to handle the image -->
+                        <a href="">
+                            <div class="image-content popular-image-content round-corner">
+                                <div class="card-image popular-card-image cab-image">
+                                    <img src="./assests/images/Cab/innova.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="glassmorp-card cab-name">
+                                    <h3 class="upperCase glassmorp-heading">innova 
+                                    </h3>
+                                    <p class="glassmorp-plan capitalize cab-price">
+                                        <span class="material-symbols-outlined">
+                                            currency_rupee
+                                        </span>
+                                        &nbsp;4500 per Day
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card swiper-slide">
+                        <!-- div to handle the image -->
+                        <a href="">
+                            <div class="image-content popular-image-content round-corner">
+                                <div class="card-image popular-card-image cab-image">
+                                    <img src="./assests/images/Cab/innovaCrysta.jpg" alt="" class="card-img">
+                                </div>
+                                <div class="glassmorp-card cab-name">
+                                    <h3 class="upperCase glassmorp-heading">innova crysta
+                                    </h3>
+                                    <p class="glassmorp-plan capitalize cab-price">
+                                        <span class="material-symbols-outlined">
+                                            currency_rupee
+                                        </span>
+                                        &nbsp;5500 per Day
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div> 
+
+
+        <!-- button for the destination page -->
+        <a id="packagesBtn" class="moreinfo capitalize" href="#" target="_blank">view all packages</a>
+
+
+    </section>
+
+    <hr>
+
+
+
+
     <!-- SECTION GALLERY -->
     <section id="gallery">
 
@@ -404,11 +510,6 @@
         <h1 id="galleryHeader" class="sectionHeading capitalize">
             <i class="ri-landscape-line"></i>&nbsp;gallery
         </h1>
-
-    <!-- About -->
-        <div id="galleryAbout" class="sectionDisc">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        </div>
 
     <!-- Gallery-Container -->
         <div id="galleryContainer" class="gallery">
