@@ -77,7 +77,7 @@
 }
 .headerList>a:hover{
     scale: 1.05;
-    color: var(--blue-ncs-light);
+    color: var(--yale-blue);
 }
 #logoImg{
     height: 90px;

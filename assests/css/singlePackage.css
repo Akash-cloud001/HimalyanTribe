@@ -76,7 +76,7 @@
 }
 .headerList>a:hover{
     scale: 1.05;
-    color: var(--blue-ncs-light);
+    color: var(--yale-blue);
 }
 #logoImg{
     height: 90px;
@@ -122,7 +122,7 @@
     scale: 1.1;
 }
 
-/* CAB-RENTAL */
+/* overview-RENTAL */
 .secondaryHeading{
     padding-top: 10px;
     font-size: x-large;
@@ -133,40 +133,39 @@
     transition: var(--transition);
     z-index: 1;
 }
-.cab-container{
+.overview-container{
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content: flex-start;
     width: 100%;
-    /* border: 1px solid black; */
     padding: var(--section-padding);
+    padding-top: 20px;
 }
-.cab-cards{
+.overview-cards{
     display: flex;
     column-gap: 10px;
     width: 100%;
     align-items: center;
     justify-content: space-between;
     padding: var(--inline-padding);
-    /* border: 1px solid blue; */
 }
-.cab-cards:nth-child(even){
+.overview-cards:nth-child(even){
     flex-direction: row-reverse;
 }
-.cab-cards:nth-child(odd){
+.overview-cards:nth-child(odd){
     flex-direction: row;
 }
-.cab-fig{
+.overview-fig{
     height: 300px;
     width: 300px;
 }
-.cab-img{
+.overview-img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-.cab-content{
+.overview-content{
     display: flex;
     flex-direction: column;
     width: 75%;
@@ -175,12 +174,11 @@
     padding: var(--inline-padding);
     color: var(--white);
     overflow: hidden;
-    /* overflow-y: scroll; */
-    background: var(--yale-blue);
+    background: hsl(206deg 34% 20% / 90%);
     cursor: default;
 }
 
-.cab-heading{
+.overview-heading{
     width: max-content;
     height: max-content;
     font-family: var(--ff-cursive);
@@ -189,27 +187,29 @@
     cursor: default;
 }
 
-.cab-place{
+.overview-place{
     display: flex;
     align-items: center;
 }
-.cab-para{
+.overview-para{
     height: 250px;
     width: 100%;
     overflow-y: scroll;
-    font-size: medium;
+    font-family: var(--ff-poppins);
+    font-size: 14px;
     cursor: default;
 }
 
-/* cab-para scroll */
-.cab-para::-webkit-scrollbar {
+/* overview-para scroll */
+.overview-para::-webkit-scrollbar {
     width: 0.15rem;
   }
-  .cab-para::-webkit-scrollbar-track {
-    background: var(--yale-blue);
+  .overview-para::-webkit-scrollbar-track {
+    background: hsl(206deg 34% 20% / 90%);
+    margin-left: 5px;
   }
-  .cab-para::-webkit-scrollbar-thumb {
-    background: var(--united-nations-blue);
+  .overview-para::-webkit-scrollbar-thumb {
+    background: var(--oxford-blue);
   }
 
 
@@ -344,11 +344,11 @@
         margin: 0 10px;
         padding: 40px 0px;
     }
-    /* cab-rental */
-    .cab-container{
+    /* overview-rental */
+    .overview-container{
         width: 100%;
     }
-    .cab-para{
+    .overview-para{
         font-size: small;
     }
 }
@@ -396,17 +396,17 @@
         padding-right: 10px;
     }
     
-    /* cab -rental */
-    .cab-container,.cab-content{
+    /* overview -rental */
+    .overview-container,.overview-content{
         padding: 0px;
     }
-    .cab-content{
+    .overview-content{
         padding: 10px;
     }
-    .cab-heading{
+    .overview-heading{
         font-size: x-large;
     }
-    .cab-para{
+    .overview-para{
         font-size: small;
     }
 }
@@ -438,34 +438,34 @@
         padding: 10px 20px 40px;
     }
 
-    /* Cab Rental */
+    /* overview Rental */
     .secondaryHeading{
         font-weight: var(--fw-600);
     }
-    .cab-cards,.cab-cards:nth-child(even),.cab-cards:nth-child(odd){
+    .overview-cards,.overview-cards:nth-child(even),.overview-cards:nth-child(odd){
         flex-direction: column;
     }
-    .cab-cards:nth-child(even) .cab-content {
+    .overview-cards:nth-child(even) .overview-content {
         align-items: flex-start;
     }
     
-    .cab-cards:nth-child(even) .cab-content .cab-para {
+    .overview-cards:nth-child(even) .overview-content .overview-para {
         text-align: left;
     }
-    .cab-content,.cab-fig{
+    .overview-content,.overview-fig{
         width: 100%;
         padding-inline: 0px;
     }
 
-    .cab-heading{
+    .overview-heading{
         font-size: x-large;
         padding-inline: 10px;
     }
-    .cab-place{
+    .overview-place{
         /* font-size: medium; */
         padding-inline: 5px;
     }
-    .cab-para{
+    .overview-para{
         padding-inline: 10px;
     }
 }

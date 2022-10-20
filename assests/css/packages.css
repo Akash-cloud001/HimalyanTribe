@@ -75,7 +75,7 @@
     transition: var(--transition);
 }
 .headerList>a:hover{
-    color: var(--blue-ncs-light);
+    color: var(--yale-blue);
 }
 #logoImg{
     height: 90px;
