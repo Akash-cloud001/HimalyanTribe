@@ -172,9 +172,9 @@
     justify-content: space-between;
     height: 300px;
     padding: var(--inline-padding);
-    color: var(--white);
+    color: var(--oxford-blue);
     overflow: hidden;
-    background: hsl(206deg 34% 20% / 90%);
+    background: hsl(206deg 22% 88% / 90%);
     cursor: default;
 }
 
@@ -205,8 +205,7 @@
     width: 0.15rem;
   }
   .overview-para::-webkit-scrollbar-track {
-    background: hsl(206deg 34% 20% / 90%);
-    margin-left: 5px;
+    background: hsl(206deg 22% 88% / 90%);
   }
   .overview-para::-webkit-scrollbar-thumb {
     background: var(--oxford-blue);

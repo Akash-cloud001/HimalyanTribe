@@ -78,7 +78,7 @@
                     </a>
                 </li>
                 <li class="headerList">
-                    <a href="#contactUs" class="navListAnchor">
+                    <a href="#query" class="navListAnchor">
                         <i class="ri-chat-3-line"></i>
                         contact us
                     </a>
@@ -565,7 +565,42 @@
 
 
     </section>
+    <hr>
 
+    <!-- Query Section -->
+
+    <section id="query">
+        <h1 id="galleryHeader" class="sectionHeading capitalize">
+            <i class="ri-chat-3-line"></i>&nbsp;contact us
+        </h1>
+        <form action="" class="query-form">
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
+            <input type="tel" name="telphone" id="telphone" placeholder="Phone Number" required>
+            <div class="query-form-div">
+                <span>
+                    <label for="start-date">Start-Date:</label>
+                    <input type="date" name="start-date" id="start-date" placeholder="Start-Date">
+                </span>
+                <span>
+                    <label for="end-date">End-Date:</label>
+                    <input type="date" name="end-date" id="end-date" placeholder="End-Date">
+                </span>
+                
+            </div>
+            <select id="select-category" name="select-category">
+                <option value="family">family</option>
+                <option value="Exotic">Exotic</option>
+                <option value="honeymoon">honeymoon</option>
+                <option value="group">group</option>
+                <option value="mnc">MNC</option>
+            </select>
+            <textarea name="message" id="message" placeholder="Enter Query"></textarea>
+            <button class="moreinfo" type="submit">send</button>
+        </form>
+    </section>
+
+    <hr>
 
     <!-- Footer -->
     <footer id="contactUs">
