@@ -123,7 +123,7 @@
     width: 100%; 
 }
 .slide-container{
-    padding: 10px 40px 40px;
+    padding: 20px 40px 40px;
 }
 
 .place-name{
@@ -140,41 +140,6 @@
     padding-top: 10px;
 }
 
-/* User Cards */
-.card-content{
-    justify-content: space-between;
-    height: 200px;
-    padding: 14px 28px 14px;
-}
-.testimonialsDesc{
-    position: relative;
-    height: 75%;
-    text-align: left;
-}
-.testimonialsDesc::before,
-.testimonialsDesc::after{
-    content:"";
-    display: inline-block;
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    z-index: -1;
-    opacity: 0.1;
-}
-.testimonialsDesc::before{
-    top: -40%;
-    left: -22%;
-    background: url("../images/shapes/dobleQuotesleft.png") no-repeat center;
-    height: 100px;
-    width: 100px;
-}
-.testimonialsDesc::after{
-    bottom: -12%;
-    right: -21%;
-    background: url("../images/shapes/doubleQuotesRight.png") no-repeat center;
-    height: 100px;
-    width: 100px;
-}
 
 
 /* Media Queries */
@@ -358,6 +323,8 @@
     }
     .headerNav{
         height: 60px;
+        column-gap: 25px;
+        grid-template-columns: 1fr 0.2fr;
     }
     #logoImg{
       height: 70px;
@@ -365,7 +332,7 @@
     /* slider */
     .slide-container{
       width: 100%;
-      padding: 40px 0px;
+      padding: 40px 20px;
     }
     /* Section */
     section{

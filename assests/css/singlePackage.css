@@ -1,9 +1,8 @@
 @import url("./base.css");
 
-
 /* Header */
 .header{
-    background:rgba(0, 0, 0, 0.5) url("../images/headerBackground.jpg");
+    background:rgba(0, 0, 0, 0.5) url("../images/header/icyMountains.jpg");
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -96,9 +95,8 @@
     font-size: calc(var(--fs-8)*2);
 }
 
-
   /* header-Content */
-.headerContent{  
+  .headerContent{  
     height: 60%;
     width: 60%;
     margin-inline: auto;
@@ -110,21 +108,132 @@
     color: var(--white);
 }
 .headerMotto{
-	font-family: var(--ff-cursive);
-    /* font-family: var(--ff-montserrat); */
+	/* font-family: var(--ff-cursive); */
+    font-family: var(--ff-montserrat);
     font-size: 3.5rem;
     font-weight: var(--fw-800);
     text-align: center;
+    letter-spacing: 0.1rem;
     transition: var(--transition);
 }
-.headerMottoSpan1{
-    font-family: var(--ff-montserrat);
-}
-.headerMottoSpan2{
-    font-weight: var(--fw-800);
-    letter-spacing: 0.2rem;
+/* moreinfo  button */
+.moreinfo:hover{
+    opacity: 1;
+    scale: 1.1;
 }
 
+/* CAB-RENTAL */
+
+.cab-container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    width: 80%;
+    /* border: 1px solid black; */
+    padding: var(--section-padding);
+}
+.cab-cards{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--inline-padding);
+    /* border: 1px solid blue; */
+}
+.cab-cards:nth-child(even){
+    flex-direction: row-reverse;
+}
+.cab-cards:nth-child(odd){
+    flex-direction: row;
+}
+.cab-fig{
+    height: 300px;
+    width: 300px;
+}
+.cab-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.cab-content{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    justify-content: space-between;
+    height: 300px;
+    padding: var(--inline-padding);
+    color: var(--white);
+    background: var(--yale-blue);
+}
+.cab-cards:nth-child(even) .cab-content{
+    align-items: flex-end;
+}
+.cab-cards:nth-child(odd) .cab-content{
+    align-items: flex-start;
+}
+.cab-heading{
+    width: max-content;
+    height: max-content;
+    /* padding: 10px; */
+    font-family: var(--ff-cursive);
+    letter-spacing: 0.1rem;
+    font-size: x-large;
+}
+.cab-price{
+    display: flex;
+    align-items: center;
+    font-size: large;
+}
+.cab-para{
+    height: 200px;
+    width: 100%;
+    font-size: small;
+    /* overflow-y: scroll; */
+}
+.cab-cards:nth-child(even) .cab-content .cab-para{
+    text-align: right;
+}
+
+/* cab-para scroll */
+
+
+/* Testimonials */
+/* User Cards */
+
+
+.card-content{
+    justify-content: space-between;
+    padding: 20px 14px 14px;
+    border: 1px solid var(--yale-blue);
+    position: relative;
+}
+
+.name{
+    position: absolute;
+    top: -20px;
+    left: 14px;
+    padding: 3px;
+    background: var(--yale-blue);
+    color: var(--white);
+}
+
+.testimonialsDesc{
+    position: relative;
+    height: 100%;
+    text-align: left;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.testimonialsDesc>span{    
+    text-align: center;
+    font-size: medium;
+    font-weight: var(--fw-500);
+    color: var(--yale-blue);
+}
 
 
 
@@ -220,7 +329,10 @@
         margin: 0 10px;
         padding: 40px 0px;
     }
-
+    /* cab-rental */
+    .cab-container{
+        width: 100%;
+    }
 }
 
 
@@ -239,8 +351,7 @@
     }
 }
 
-
-@media screen and (max-width:768px) {
+@media screen and (max-width:769px) {
     /* header Content */
     .headerMotto{
         font-size: 2.5rem;
@@ -267,8 +378,21 @@
         padding-right: 10px;
     }
     
-
+    /* cab -rental */
+    .cab-container,.cab-content{
+        padding: 0px;
+    }
+    .cab-content{
+        padding: 10px;
+    }
+    .cab-heading{
+        font-size: x-large;
+    }
+    .cab-para{
+        font-size: small;
+    }
 }
+
 
 
 @media screen and (max-width:600px){
@@ -296,7 +420,38 @@
         padding: 10px 20px 40px;
     }
 
+    /* Cab Rental */
+    .cab-cards,.cab-cards:nth-child(even),.cab-cards:nth-child(odd){
+        flex-direction: column;
+    }
+    .cab-cards:nth-child(even) .cab-content {
+        align-items: flex-start;
+    }
+    
+    .cab-cards:nth-child(even) .cab-content .cab-para {
+        text-align: left;
+    }
+    .cab-content,.cab-fig{
+        width: 100%;
+        padding-inline: 0px;
+    }
+    /* .cab-content{
+        height: max-content;
+        max-height: 200px;
+    } */
+    .cab-heading{
+        font-size: x-large;
+        padding-inline: 10px;
+    }
+    .cab-price{
+        font-size: medium;
+        padding-inline: 5px;
+    }
+    .cab-para{
+        padding-inline: 10px;
+    }
 }
+
 
 
 @media screen and (max-width:430px) {

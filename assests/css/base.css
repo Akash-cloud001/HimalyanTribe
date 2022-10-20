@@ -809,7 +809,11 @@ footer a{
   }
 }
 
-
+@media screen and (max-width:426px) {
+  .contact-text{
+    font-size: medium;
+  }
+}
 @media screen and (max-width:300px){
   /* Footer */
     footer{
