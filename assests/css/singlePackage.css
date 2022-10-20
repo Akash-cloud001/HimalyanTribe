@@ -110,7 +110,7 @@
 .headerMotto{
 	/* font-family: var(--ff-cursive); */
     font-family: var(--ff-montserrat);
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: var(--fw-800);
     text-align: center;
     letter-spacing: 0.1rem;
@@ -123,18 +123,28 @@
 }
 
 /* CAB-RENTAL */
-
+.secondaryHeading{
+    padding-top: 10px;
+    font-size: x-large;
+    font-family: var(--ff-montserrat);
+    font-weight: var(--fw-800);
+    color: var(--yale-blue);
+    text-align: center;
+    transition: var(--transition);
+    z-index: 1;
+}
 .cab-container{
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content: flex-start;
-    width: 80%;
+    width: 100%;
     /* border: 1px solid black; */
     padding: var(--section-padding);
 }
 .cab-cards{
     display: flex;
+    column-gap: 10px;
     width: 100%;
     align-items: center;
     justify-content: space-between;
@@ -164,42 +174,47 @@
     height: 300px;
     padding: var(--inline-padding);
     color: var(--white);
+    overflow: hidden;
+    /* overflow-y: scroll; */
     background: var(--yale-blue);
+    cursor: default;
 }
-.cab-cards:nth-child(even) .cab-content{
-    align-items: flex-end;
-}
-.cab-cards:nth-child(odd) .cab-content{
-    align-items: flex-start;
-}
+
 .cab-heading{
     width: max-content;
     height: max-content;
-    /* padding: 10px; */
     font-family: var(--ff-cursive);
     letter-spacing: 0.1rem;
     font-size: x-large;
+    cursor: default;
 }
-.cab-price{
+
+.cab-place{
     display: flex;
     align-items: center;
-    font-size: large;
 }
 .cab-para{
-    height: 200px;
+    height: 250px;
     width: 100%;
-    font-size: small;
-    /* overflow-y: scroll; */
-}
-.cab-cards:nth-child(even) .cab-content .cab-para{
-    text-align: right;
+    overflow-y: scroll;
+    font-size: medium;
+    cursor: default;
 }
 
 /* cab-para scroll */
+.cab-para::-webkit-scrollbar {
+    width: 0.15rem;
+  }
+  .cab-para::-webkit-scrollbar-track {
+    background: var(--yale-blue);
+  }
+  .cab-para::-webkit-scrollbar-thumb {
+    background: var(--united-nations-blue);
+  }
+
 
 
 /* Testimonials */
-/* User Cards */
 
 
 .card-content{
@@ -239,7 +254,7 @@
 
 /* Media Quereies */
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width:1025px) {
     /* Header */
     .headerNav{
         grid-template-columns: 1fr 0.5fr;
@@ -333,6 +348,9 @@
     .cab-container{
         width: 100%;
     }
+    .cab-para{
+        font-size: small;
+    }
 }
 
 
@@ -421,6 +439,9 @@
     }
 
     /* Cab Rental */
+    .secondaryHeading{
+        font-weight: var(--fw-600);
+    }
     .cab-cards,.cab-cards:nth-child(even),.cab-cards:nth-child(odd){
         flex-direction: column;
     }
@@ -435,16 +456,13 @@
         width: 100%;
         padding-inline: 0px;
     }
-    /* .cab-content{
-        height: max-content;
-        max-height: 200px;
-    } */
+
     .cab-heading{
         font-size: x-large;
         padding-inline: 10px;
     }
-    .cab-price{
-        font-size: medium;
+    .cab-place{
+        /* font-size: medium; */
         padding-inline: 5px;
     }
     .cab-para{
