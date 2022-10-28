@@ -248,7 +248,13 @@
     font-weight: var(--fw-500);
     color: var(--yale-blue);
 }
-
+.sectionDisc{
+    width: inherit;
+    text-align: center;
+    color: var(--yale-blue);
+    text-transform: uppercase;
+    font-weight: 800;
+}
 
 
 /* Media Quereies */
