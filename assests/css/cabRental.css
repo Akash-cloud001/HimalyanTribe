@@ -149,6 +149,7 @@
     justify-content: space-between;
     align-items: center;
     border: none;
+    margin: 5px 0px 0px 0px;
     font-size: medium;
     color: var(--onyx);
     font-family: var(--ff-poppins);
@@ -171,6 +172,37 @@
 
 .whatsappBtn{
     background: 	#25D366;
+}
+
+
+/* Services Sections */
+.services-container{
+    padding: 40px 0px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 40px;
+    justify-items: center;
+}
+.service-card{
+    padding: 10px;
+    width: 90%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.services-heading{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: x-large;
+    font-family: var(--ff-montserrat);
+    font-weight: var(--fw-800);
+    color: var(--black-coral);
+    text-align: center;
+    transition: var(--transition);
+    z-index: 1;
+}
+.service-card-para{
+    padding-top: 10px;
+    color: var(--oxford-blue);
 }
 
 /* Media Queries */
@@ -322,6 +354,20 @@
         width: 65%;
     }
 
+    /* services */
+    .services-container{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    .service-card{
+        width: 100%;
+    }
+    .services-heading{
+        font-size: large;
+    }
+    .service-card-para{
+        font-size: small;
+    }
  
 }
 
