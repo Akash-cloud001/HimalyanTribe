@@ -263,6 +263,7 @@ hr{
 }
 .card{
   background: var(--white);
+  border-radius: 10px;
 }
 
 .image-content{
@@ -348,11 +349,14 @@ hr{
 /* glassmorp card */
 .glassmorp-card{
   position: absolute;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   top: 65%;
   height: 50%;
   width: 100%;
   transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .glassmorp-card:hover{
   top: 60%;

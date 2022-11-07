@@ -140,6 +140,57 @@
     padding-top: 10px;
 }
 
+/* rentCab */
+.cab-rent-para{
+    padding-top: 10px;
+    font-size: large;
+    color: var(--oxford-blue);
+    font-weight: var(--fw-700);
+    text-align: center;
+}
+.cabs-slider-heading{
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    font-size: x-large;
+    font-family: var(--ff-montserrat);
+    font-weight: var(--fw-800);
+    color: var(--oxford-blue);
+    text-align: center;
+    transition: var(--transition);
+    z-index: 1;
+}
+
+.glassmorp-card:hover{
+    top: 65%;
+  }
+
+.glassmorp-heading{
+    text-align: center;
+}
+.cab-facility{
+    color: var(--white);
+    font-family: var(--ff-poppins);
+    padding: 0px 10px;
+    text-align: center;
+    width: 100%;
+    /* font-weight: bold; */
+}
+.cab-facility li{
+    margin: 5px;
+}
+.cab-inner-facility{
+    display: flex;
+    justify-content: space-between;
+}
+.moreinfo{
+    width: 60%;
+    margin: 0;
+    margin-inline: auto;
+    opacity: 0.9;
+}
 
 /* query form */
 .pick-drop-location{
@@ -168,6 +219,26 @@
 }
 .query-form-div select, option{
     text-transform: capitalize;
+}
+
+.query-btn-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.query-btn{
+    font-size: medium;
+    background: var(--bright-navy-blue);
+    color: var(--white);
+    padding: 6px 14px;
+    border-radius: 6px;
+    margin: 14px;
+    opacity: 0.8;
+    transition: var(--transition);
+}
+.query-btn:hover{
+    opacity: 1;
 }
 
 .whatsappBtn{
