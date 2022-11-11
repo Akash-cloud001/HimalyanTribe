@@ -531,6 +531,9 @@
     .inclusion-list-items,.exclusion-list-items{
         font-size: small;
     }
+    .inc-exc-btn{
+        font-size: x-small;
+    }
 }
 
 
@@ -563,7 +566,10 @@
     section{
         padding: 50px 10px;
     }
-
+    .inc-exc-btn{
+        font-size: x-small;
+        margin: 0;
+    }
 }
 
 @media screen and (max-width:375px) {
