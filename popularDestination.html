@@ -294,15 +294,23 @@
                 </span>
                 
             </div>
-            <select id="select-category" name="select-category">
-                <option value="family">family</option>
-                <option value="Exotic">Exotic</option>
-                <option value="honeymoon">honeymoon</option>
-                <option value="group">group</option>
-                <option value="mnc">MNC</option>
-            </select>
+            <span class="query-form-category">
+                <label for="select-category" class="capitalize">Category&nbsp;: </label>
+                <select id="select-category" name="select-category" class="capitalize">
+                    <option hidden disabled selected value=""></option>
+                    <option value="family" class="capitalize">family</option>
+                    <option value="Exotic" class="capitalize">Exotic</option>
+                    <option value="honeymoon" class="capitalize">honeymoon</option>
+                    <option value="group" class="capitalize">group</option>
+                    <option value="mnc" class="capitalize">MNC</option>
+                    <option value="none" class="capitalize">none</option>
+                </select>
+            </span>
             <textarea name="message" id="message" placeholder="Enter Query"></textarea>
-            <button class="moreinfo" type="submit">send</button>
+            <div class="query-btn-container">
+                <button class="query-btn whatsappBtn" type="submit">Whatsapp</button>
+                <button class="query-btn" type="submit">Email</button>
+            </div>
         </form>
     </section>
 
@@ -335,6 +343,11 @@
                             <li class="handler-list">
                                 <a href="" class="handler-anchor capitalize">
                                     <i class="ri-mail-line"></i>
+                                </a>
+                            </li>
+                            <li class="handler-list">
+                                <a href="" class="handler-anchor capitalize">
+                                    <i class="ri-facebook-fill"></i>
                                 </a>
                             </li>
                         </ul>

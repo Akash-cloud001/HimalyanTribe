@@ -102,9 +102,6 @@
                     title
                 </h2>
             </div>
-            <a href="" class="moreinfo" download>
-                download PDF
-            </a>
         </div>
     </header>
 
@@ -114,7 +111,11 @@
         <h1 id="overview-Header" class="sectionHeading capitalize">
             <i class="ri-map-pin-2-line"></i>&nbsp;overview
         </h1>
-       
+        <h3 class="upperCase overview-heading3"> duration: 4 nights / 5 days <br> starting point: delhi/chandigarh</h3>
+        <p class="overview-header-para">
+            The name Manali is derived from 'Manu-Alaya' which literally means 'the abode of Manu'. As the legend says, Manali was the place where Manu’s boat was found after the great floods and he stepped off his ark in Manali to recreate human life after a great flood had deluged the world. Old Manali village has an ancient temple dedicated to sage Manu. It is at an altitude of 6260 feet above sea level, Manali is a renowned hill station bestowing aesthetic beauty & mesmerizing natural appeal. Whether you are on a family trip or on honeymoon or just seeking a great time with close buddies. Himalayan tribe offers you the best KASOL KULLU MANIKARAN ROHTANG MANALI tour package that suits your budget, perfectly.
+
+        </p>
         <div class="overview-container">
             <div class="overview-cards">
                 <figure class="overview-fig">
@@ -187,6 +188,44 @@
                 </div>
             </div>
         </div>
+
+        <div class="inclusion">
+            <h3 class="upperCase"> 
+                inclusion
+            </h3>
+            <ul class="inclusion-ul">
+                <li class="inclusion-list-items upperCase">4 DINNER + 5 BREAKFASTS</li>
+                <li class="inclusion-list-items upperCase">STAYS</li>
+                <li class="inclusion-list-items upperCase">PICK & DROP</li>
+                <li class="inclusion-list-items upperCase">SIGHTSEEING AS PER TOUR ITINERARY
+                </li>
+                <li class="inclusion-list-items upperCase">ALL TOLL TAXES, PARKING FEES, AND DRIVERS ALLOWANCES
+                </li>
+                <li class="inclusion-list-items upperCase">24X7 TRAVEL ASSISTANCE THROUGH OUT THE TOUR
+                </li>
+            </ul>
+        </div>
+
+        <div class="exclusion">
+            <h3 class="upperCase"> 
+                exclusion
+            </h3>
+            <ul class="exclusion-ul">
+                <li class="exclusion-list-items upperCase">CHARGES FOR EARLY CHECK-IN & LATE CHECK-OUT AT HOTEL</li>
+                <li class="exclusion-list-items upperCase">LUNCH OR ANY OTHER MEALS SPECIFIED IN THE INCLUSIONS</li>
+                <li class="exclusion-list-items upperCase">HEATER CHARGES</li>
+                <li class="exclusion-list-items upperCase"> ANY AIR/TRAIN FARE
+                </li>
+                <li class="exclusion-list-items upperCase">MONUMENTS/MUESEUM/ART GALLERY ENTRANCE FEES
+                </li>
+                <li class="exclusion-list-items upperCase">ANY ADVENTURE ACTIVITY SKIING, PARAGLIDING, RIVER RAFTING ETC
+                </li>
+                <li class="exclusion-list-items upperCase">ANY EXTRA CHARGES OCCURING DUE TO NATURAL CALAMITIES</li>
+            </ul>
+        </div>
+        <a href="" class="moreinfo" download>
+            download PDF
+        </a>
     </section>
 
     <hr>
@@ -452,15 +491,23 @@
                 </span>
                 
             </div>
-            <select id="select-category" name="select-category">
-                <option value="family">family</option>
-                <option value="Exotic">Exotic</option>
-                <option value="honeymoon">honeymoon</option>
-                <option value="group">group</option>
-                <option value="mnc">MNC</option>
-            </select>
+            <span class="query-form-category">
+                <label for="select-category" class="capitalize">Category&nbsp;: </label>
+                <select id="select-category" name="select-category" class="capitalize">
+                    <option hidden disabled selected value=""></option>
+                    <option value="family" class="capitalize">family</option>
+                    <option value="Exotic" class="capitalize">Exotic</option>
+                    <option value="honeymoon" class="capitalize">honeymoon</option>
+                    <option value="group" class="capitalize">group</option>
+                    <option value="mnc" class="capitalize">MNC</option>
+                    <option value="none" class="capitalize">none</option>
+                </select>
+            </span>
             <textarea name="message" id="message" placeholder="Enter Query"></textarea>
-            <button class="moreinfo" type="submit">send</button>
+            <div class="query-btn-container">
+                <button class="query-btn whatsappBtn" type="submit">Whatsapp</button>
+                <button class="query-btn" type="submit">Email</button>
+            </div>
         </form>
     </section>
 
@@ -493,6 +540,11 @@
                             <li class="handler-list">
                                 <a href="" class="handler-anchor capitalize">
                                     <i class="ri-mail-line"></i>
+                                </a>
+                            </li>
+                            <li class="handler-list">
+                                <a href="" class="handler-anchor capitalize">
+                                    <i class="ri-facebook-fill"></i>
                                 </a>
                             </li>
                         </ul>

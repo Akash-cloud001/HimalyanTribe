@@ -410,8 +410,6 @@
 
     <!-- SECTION CAB -->
     <section id="cab-section">
-
-
         <!-- header -->
         <h1 id="cab-Header" class="sectionHeading capitalize">
             <i class="ri-taxi-line"></i>&nbsp;Rent A CAB
@@ -427,58 +425,21 @@
                         <!-- div to handle the image -->
                         <a href="">
                             <div class="image-content popular-image-content round-corner">
-                                <div class="card-image popular-card-image cab-image">
-                                    <img src="./assests/images/Cab/tempo.jpg" alt="" class="card-img">
+                                <div class="card-image popular-card-image">
+                                    <img src="./assests/images/Cab/10751.jpg" alt="" class="card-img">
                                 </div>
-                                <div class="glassmorp-card cab-name">
-                                    <h3 class="upperCase glassmorp-heading">Tempo Traveller
+                                <div class="cab-glassmorp-card">
+                                    <h3 class="upperCase glassmorp-heading">Alto 800
                                     </h3>
-                                    <p class="glassmorp-plan capitalize cab-price">
-                                        <span class="material-symbols-outlined">
-                                            currency_rupee
-                                        </span>
-                                        &nbsp;5000 per Day
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card swiper-slide">
-                        <!-- div to handle the image -->
-                        <a href="">
-                            <div class="image-content popular-image-content round-corner">
-                                <div class="card-image popular-card-image cab-image">
-                                    <img src="./assests/images/Cab/innova.jpg" alt="" class="card-img">
-                                </div>
-                                <div class="glassmorp-card cab-name">
-                                    <h3 class="upperCase glassmorp-heading">innova 
-                                    </h3>
-                                    <p class="glassmorp-plan capitalize cab-price">
-                                        <span class="material-symbols-outlined">
-                                            currency_rupee
-                                        </span>
-                                        &nbsp;4500 per Day
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card swiper-slide">
-                        <!-- div to handle the image -->
-                        <a href="">
-                            <div class="image-content popular-image-content round-corner">
-                                <div class="card-image popular-card-image cab-image">
-                                    <img src="./assests/images/Cab/innovaCrysta.jpg" alt="" class="card-img">
-                                </div>
-                                <div class="glassmorp-card cab-name">
-                                    <h3 class="upperCase glassmorp-heading">innova crysta
-                                    </h3>
-                                    <p class="glassmorp-plan capitalize cab-price">
-                                        <span class="material-symbols-outlined">
-                                            currency_rupee
-                                        </span>
-                                        &nbsp;5500 per Day
-                                    </p>
+                                    <ul class="cab-facility">
+                                        <li class="price-per-day upperCase">1500/day</li>
+                                        <li class="cab-inner-facility">
+                                            <div>4 seats</div>
+                                            <div>AC</div>
+                                            <div>Diesel</div>
+                                        </li>
+                                    </ul>
+                                    <button class="moreinfo cab-btn-margin" type="submit">Book Now</button>
                                 </div>
                             </div>
                         </a>
@@ -588,15 +549,23 @@
                 </span>
                 
             </div>
-            <select id="select-category" name="select-category">
-                <option value="family">family</option>
-                <option value="Exotic">Exotic</option>
-                <option value="honeymoon">honeymoon</option>
-                <option value="group">group</option>
-                <option value="mnc">MNC</option>
-            </select>
+            <span class="query-form-category">
+                <label for="select-category" class="capitalize">Category&nbsp;: </label>
+                <select id="select-category" name="select-category" class="capitalize">
+                    <option hidden disabled selected value=""></option>
+                    <option value="family" class="capitalize">family</option>
+                    <option value="Exotic" class="capitalize">Exotic</option>
+                    <option value="honeymoon" class="capitalize">honeymoon</option>
+                    <option value="group" class="capitalize">group</option>
+                    <option value="mnc" class="capitalize">MNC</option>
+                    <option value="none" class="capitalize">none</option>
+                </select>
+            </span>
             <textarea name="message" id="message" placeholder="Enter Query"></textarea>
-            <button class="moreinfo" type="submit">send</button>
+            <div class="query-btn-container">
+                <button class="query-btn whatsappBtn" type="submit">Whatsapp</button>
+                <button class="query-btn" type="submit">Email</button>
+            </div>
         </form>
     </section>
 
@@ -630,6 +599,11 @@
                             <li class="handler-list">
                                 <a href="" class="handler-anchor capitalize">
                                     <i class="ri-mail-line"></i>
+                                </a>
+                            </li>
+                            <li class="handler-list">
+                                <a href="" class="handler-anchor capitalize">
+                                    <i class="ri-facebook-fill"></i>
                                 </a>
                             </li>
                         </ul>

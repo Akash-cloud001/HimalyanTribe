@@ -110,7 +110,7 @@
                                 <div class="card-image popular-card-image">
                                     <img src="./assests/images/Cab/10751.jpg" alt="" class="card-img">
                                 </div>
-                                <div class="glassmorp-card">
+                                <div class="cab-glassmorp-card">
                                     <h3 class="upperCase glassmorp-heading">Alto 800
                                     </h3>
                                     <ul class="cab-facility">
@@ -121,7 +121,7 @@
                                             <div>Diesel</div>
                                         </li>
                                     </ul>
-                                    <button class="moreinfo" type="submit">Book Now</button>
+                                    <button class="moreinfo cab-btn-margin" type="submit">Book Now</button>
                                 </div>
                             </div>
                         </a>
@@ -145,7 +145,7 @@
                                 <div class="card-image popular-card-image">
                                     <img src="./assests/images/Cab/10751.jpg" alt="" class="card-img">
                                 </div>
-                                <div class="glassmorp-card">
+                                <div class="cab-glassmorp-card">
                                     <h3 class="upperCase glassmorp-heading">ertiga
                                     </h3>
                                     <ul class="cab-facility">
@@ -156,7 +156,7 @@
                                             <div>Diesel</div>
                                         </li>
                                     </ul>
-                                    <button class="moreinfo" type="submit">Book Now</button>
+                                    <button class="moreinfo cab-btn-margin" type="submit">Book Now</button>
                                 </div>
                             </div>
                         </a>
@@ -178,10 +178,10 @@
         <h1 id="galleryHeader" class="sectionHeading capitalize">
             <i class="ri-chat-3-line"></i>&nbsp;contact us
         </h1>
-        <form action="" class="query-form">
+        <form action="" class="query-form"  id="query-form-section">
             <input type="text" name="name" id="name" placeholder="Your Name" required>
             <input type="email" name="email" id="email" placeholder="E-mail">
-            <input type="tel" name="telphone" id="telphone" placeholder="Phone Number" required>
+            <input type="te" name="telephone" id="telephone" placeholder="Phone Number" required>
 
             <div class="query-form-div">
                 <span>
@@ -197,14 +197,14 @@
 
             <div class="pick-drop-location">
                 <input type="text" name="pick-up-point" id="pick-up-point" placeholder="Pick Up Point" >
-                <input type="text" name="drop-up-point" id="drop-up-point" placeholder="Drop Point" >
+                <input type="text" name="drop-up-point" id="drop-point" placeholder="Drop Point" >
             </div>
 
 
 
 
             <div class="pick-drop-location">
-                <input type="text" name="number-of-person" id="number-of-person" placeholder="Number of People" >
+                <input type="number" name="number-of-person" id="number-of-person" placeholder="Number of People" >
                 <input type="text" name="travel-destination" id="travel-destination" placeholder="Travel Destination">
             </div>
 
@@ -253,9 +253,8 @@
             </div>
             
             <div class="query-btn-container">
-                <button class="query-btn whatsappBtn" type="submit">Whatsapp</button>
-                <button class="query-btn" type="submit">Email</button>
-
+                <button class="query-btn whatsappBtn"  id="whatsapp-btn" type="button">Whatsapp</button>
+                <button class="query-btn" id="email-btn">Email</button>
             </div>
         </form>
     </section>
@@ -380,6 +379,11 @@
                             <li class="handler-list">
                                 <a href="" class="handler-anchor capitalize">
                                     <i class="ri-mail-line"></i>
+                                </a>
+                            </li>
+                            <li class="handler-list">
+                                <a href="" class="handler-anchor capitalize">
+                                    <i class="ri-facebook-fill"></i>
                                 </a>
                             </li>
                         </ul>
@@ -516,8 +520,9 @@
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <!-- JS -->
-    <script src="./assests/js/script.js" defer></script>
-    <script src="./assests/js/slider.js" defer></script>
+    <script src="./assests/js/script.js"></script>
+    <script src="./assests/js/slider.js"></script>
+    <script src="./assests/js/queryData.js"></script>
 
 </body>
 </html>

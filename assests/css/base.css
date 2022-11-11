@@ -366,6 +366,7 @@ hr{
   font-family: var(--ff-montserrat);
   padding: 10px 10px 0px 10px;
   word-wrap:break-word;
+  text-align: center;
 }
 .glassmorp-plan{
   display: flex;
@@ -376,11 +377,6 @@ hr{
   padding: 10px 10px;
 
 }
-/* Google Rupee icon */
-.material-symbols-outlined {
-  font-size: 20px;
-}
-
 
 /* Buttons */
 .moreinfo{
@@ -392,10 +388,75 @@ hr{
   margin: 14px;
   opacity: 0.8;
   transition: var(--transition);
+  z-index: 5;
 }
 .moreinfo:hover{
   opacity: 1;
 }
+
+/* Google Rupee icon */
+.material-symbols-outlined {
+  font-size: 20px;
+}
+/* cab-glassmorp-card */
+.cab-glassmorp-card{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  top: 65%;
+  height: 50%;
+  width: 100%;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cab-rent-para{
+  padding-top: 10px;
+  font-size: large;
+  color: var(--oxford-blue);
+  font-weight: var(--fw-700);
+  text-align: center;
+}
+.cabs-slider-heading{
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  font-size: x-large;
+  font-family: var(--ff-montserrat);
+  font-weight: var(--fw-800);
+  color: var(--oxford-blue);
+  text-align: center;
+  transition: var(--transition);
+  z-index: 1;
+}
+
+.cab-facility{
+  color: var(--white);
+  font-family: var(--ff-poppins);
+  padding: 0px 10px;
+  text-align: center;
+  width: 100%;
+  /* font-weight: bold; */
+}
+.cab-facility li{
+  margin: 5px;
+}
+.cab-inner-facility{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cab-btn-margin{
+  margin: 0;
+  width: 50%;
+  opacity: 0.9;
+  z-index: 5;
+}
+
+
 
 /* side arrows */
 
@@ -468,8 +529,44 @@ select>option{
   font-family: var(--ff-poppins);
 }
 
+.query-form-category{
+  width: 75%;
+  background: rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+  margin: 5px 0px;
+}
+.query-form-category>select{
+  margin: 0;
+  margin-left: 10px;
+}
+  
+.query-btn-container{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.query-btn{
+  font-size: medium;
+  background: var(--bright-navy-blue);
+  color: var(--white);
+  padding: 6px 14px;
+  border-radius: 6px;
+  margin: 14px;
+  opacity: 0.8;
+  transition: var(--transition);
+  z-index: 5;
+}
+.query-btn:hover{
+  opacity: 1;
+}
 
-
+.whatsappBtn{
+  background: #25D366;
+}
 /* Footer */
 
 footer{
@@ -597,14 +694,12 @@ footer a{
 .popup-content{
   position: relative;
   height: 400px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
+  width: max(50%,300px);
   text-align: left;
   padding: var(--inline-padding);
   padding-top: 60px;
   background: var(--white);
-  font-size: small;
+  font-size: large;
   overflow-y: scroll;
   transition: var(--transition);
 }
@@ -624,16 +719,16 @@ footer a{
   position: absolute;
   top: 20px;
   font-weight: var(--fw-800);
-  font-size: medium;
+  font-size: larger;
   display: flex;
-  width: 85%;
+  width: 92%;
   justify-content: space-between;
   align-items: center;
   color: var(--yale-blue);
 }
 .popup-close-btn{
   color: var(--yale-blue);
-  font-size: large;
+  font-size: larger;
 }
 
 
@@ -764,12 +859,11 @@ footer a{
     height: 3rem;
     font-size: small;
   }
-  .query-form-div {
+  .query-form-div,.query-form-category {
     height: 3rem;
     width: 100%;
     font-size: small;
   }
-
   /* Footer */
   footer{
     height: 460px;
@@ -801,6 +895,9 @@ footer a{
   }
   .quick-links{
     width: 100%;
+  }
+  .popup-content{
+    font-size: medium;
   }
 }
 
@@ -886,6 +983,9 @@ footer a{
   footer{
     height: 520px;
   }
+  .popup-content{
+    font-size: small;
+  }
 }
 
 @media screen and (max-width:426px) {
@@ -897,6 +997,10 @@ footer a{
   }
 }
 @media screen and (max-width:300px){
+  /* buttons */
+  .moreinfo{
+    padding: 5px;
+  }
   /* Footer */
     footer{
         height: 630px;
